@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/instalaciones.css">
+</head>
+<body>
+    <nav>
+        <img src="./img/logo.png" alt="">
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./actividades.html">Actividades</a></li>
+            <li><a href="./instalaciones.html">Instalaciones</a></li>
+            <li id="reservas"><a href="./reservas.html">Reservas</a></li>
+            <li id="inscripciones"><a href="./inscripciones.html">Inscripciones</a></li>
+            <li id="login"><a href="./login.html">Login</a></li>
+            <li id="register"><a href="./register.html">Register</a></li>
+            <li id="sistema"><a href="./sistema.html">Usuario</a></li>
+        </ul>
+    </nav>
+
+    <form id="search-form">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="search-nombre-instalacion"><strong>Nombre</strong></label>
+                <input type="text" id="search-nombre-instalacion" name="nombre" placeholder="Nombre Instalacion...">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="search-descripcion-Instalacion"><strong>Descripción</strong></label>
+                <input type="text" id="search-descripcion-Instalacion" name="descripcion" placeholder="Descripción Instalacion...">
+            </div>
+        </div>
+    </form>
+
+    <div class="instalaciones-container">
+        <h2>Instalacion</h2>
+        <div id="mensajeError"></div>
+        <ul id="instalaciones-list"></ul>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Centros Cívicos de Córdoba. Todos los derechos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./privacidad.html">Política de Privacidad</a></li>
+                <li><a href="./terminos.html">Términos y Condiciones</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/instalaciones.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,247 @@
+/* Global Styles */
+body {
+    background-color: #f4f4f4;
+    color: #fcd62b;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background: linear-gradient(90deg, #005a8d, #003d5b);
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 0 15px;
+ 
+}
+
+strong{
+    color: #000000;
+}
+
+.info {
+    color:#003d5b;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Section Styles */
+.section {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #003d5b;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #005a8d;
+}
+
+.section p {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Button Styles */
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #003d5b;
+    background: #005a8d;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #003d5b;
+    transform: scale(1.05);
+}
+
+/* Specific Button Styles */
+.edit-button {
+    background: #28a745;
+}
+
+.edit-button:hover {
+    background: #218838;
+}
+
+.refresh-button {
+    background: #ffc107;
+    color: black;
+}
+
+.refresh-button:hover {
+    background: #e0a800;
+}
+
+.logout-button {
+    background: #dc3545;
+}
+
+.logout-button:hover {
+    background: #c82333;
+}
+
+.delete-button {
+    background: #ff0000;
+}
+
+.delete-button:hover {
+    background: #840c0c;
+}
+
+/* New Styles for User Management Section */
+#gestion-usuario {
+    background: #005a8d;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    max-width: 700px;
+    margin: 60px auto;
+    text-align: center;
+    
+}
+
+#seccionBotones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#gestion-usuario h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+#gestion-usuario p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#gestion-usuario button {
+    width: auto;
+    margin: 15px 10px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    background: #ffffff;
+    color: #fda085;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#gestion-usuario button:hover {
+    background: #f6d365;
+    transform: scale(1.1);
+}
+
+#gestion-usuario .edit-button {
+    background: #ffffff;
+    color: #005a8d;
+}
+
+#gestion-usuario .edit-button:hover {
+    background: #28a745;
+    color: #ffffff;
+}
+
+#gestion-usuario .refresh-button {
+    background: #ffffff;
+    color: #005a8d;
+}
+
+#gestion-usuario .refresh-button:hover {
+    background: #28a745;
+    color: #ffffff;
+}
+
+#gestion-usuario .logout-button {
+    background: #ffffff;
+    color: #005a8d;
+}
+
+#gestion-usuario .logout-button:hover {
+    background: #28a745;
+    color: #ffffff;
+}
+
+#gestion-usuario .delete-button {
+    background: #ffffff;
+    color: #005a8d;
+}
+
+#gestion-usuario .delete-button:hover {
+    background: #28a745;
+    color: #ffffff;
+}
+
+#user-info {
+    display: none;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #003d5b;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#user-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+#user-info p strong {
+    color: #005a8d;
+}
+
+#user-info span {
+    color: #003d5b;
+}

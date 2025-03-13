@@ -1,0 +1,94 @@
+body {
+    background-color: #f4f4f4;
+    color: #fcd62b;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.edit-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #003d5b;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.edit-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #005a8d;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #003d5b;
+    font-weight: bold;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #003d5b;
+    background: #f9f9f9;
+    color: #003d5b;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background: #ffcc00;
+    transform: scale(1.05);
+    color: #003d5b;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #003d5b;
+    transform: scale(1.05);
+    color: white;
+}
+
+.volver-button {
+    background: #ffcc00;
+    transform: scale(1.05);
+    color: #003d5b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.volver-button:hover {
+    background: #003d5b;
+    transform: scale(1.05);
+    color: white;
+}
+
+.text-danger {
+    color: red;
+    font-weight: bold;
+}

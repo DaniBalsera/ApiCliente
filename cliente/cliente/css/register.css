@@ -1,0 +1,131 @@
+
+
+body {
+    background-color: #f4f4f4;
+    color: #fcd62b;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: linear-gradient(90deg, #005a8d, #003d5b);
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.register-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    max-width: 400px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #005a8d;
+    background: #f9f9f9;
+    color: #333;
+}
+
+input::placeholder {
+    color: #ccc;
+    text-align: center;
+}
+
+button {
+    background: #005a8d;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+button:hover {
+    background: #003d5b;
+}
+
+.volver-button {
+    background: #005a8d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.volver-button:hover {
+    background: #003d5b;
+}
+
+.text-danger {
+    color: red;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    color: #005a8d;
+}
+
+#mensajeError {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    display: none;
+}
+
+#registroExitoso {
+    color: green;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    display: none;
+}

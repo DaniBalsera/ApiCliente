@@ -1,0 +1,231 @@
+/* Global Styles */
+body {
+    background-color: #f4f4f4;
+    color: #fcd62b;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background: linear-gradient(90deg, #005a8d, #003d5b);
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Actividades Container */
+.actividades-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actividades-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #005a8d;
+}
+
+/* Actividades List */
+#actividades-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#actividades-list li {
+    background: #e7e7e7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    flex: 1 1 calc(33.333% - 60px);
+    box-sizing: border-box;
+    text-align: center;
+    transition: all 0.3s;
+    color: #333;
+}
+
+#actividades-list li:hover {
+    background: #ffcc00;
+    color: #003d5b;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#actividades-list li h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+#actividades-list li p {
+    margin: 0;
+    font-size: 1em;
+    color: #1d1818;
+}
+
+strong{
+    color: #005a8d;
+}
+
+
+.info {
+    color: #000000;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: beige;
+    border: 1px solid #005a8d;
+    border-radius: 4px;
+    display: block;
+}
+
+/* Search Form */
+form#search-form {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #005a8d;
+}
+
+.form-group input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #005a8d;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.search-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #005a8d;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.search-button:hover {
+    background: #003d5b;
+}
+
+
+#mensajeError {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    display: none;
+}
+
+/* Footer Styles */
+footer {
+    background: #003d5b;
+    color: #ffffff;
+    padding: 20px 40px;
+    text-align: center;
+    border-top: 4px solid #005a8d;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+    color: #ffcc00;
+}

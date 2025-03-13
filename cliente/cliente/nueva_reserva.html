@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Reserva</title>
+    <link rel="stylesheet" href="./css/new_reserva.css">
+</head>
+
+<body>
+    <nav>
+        <img src="./img/logo.png" alt="">
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./actividades.html">Actividades</a></li>
+            <li><a href="./instalaciones.html">Instalaciones</a></li>
+            <li id="reservas"><a href="./reservas.html">Reservas</a></li>
+            <li id="inscripciones"><a href="./inscripciones.html">Inscripciones</a></li>
+            <li id="sistema"><a href="./sistema.html">Usuario</a></li>
+        </ul>
+    </nav>
+    <div class="reserva-container">
+        <h2>Crear Reserva</h2>
+        <form id="new-reserva-form" method="post" action="">
+            <div class="form-group">
+                <label for="nombre">Nombre del Solicitante:</label>
+                <input type="text" id="nombre" name="nombre" value="">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" value="">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="">
+            </div>
+            <div class="form-group">
+                <label for="instalacion">Instalación:</label>
+                <select id="instalacion" name="instalacion">
+                    <option value="">Seleccione una instalación</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fecha_hora_inicio">Fecha y Hora de Inicio:</label>
+                <input type="datetime-local" id="fecha_hora_inicio" name="fecha_hora_inicio">
+            </div>
+            <div class="form-group">
+                <label for="fecha_hora_final">Fecha y Hora de Final:</label>
+                <input type="datetime-local" id="fecha_hora_final" name="fecha_hora_final">
+            </div>
+
+            <button type="submit">Crear Reserva</button>
+        </form>
+        <button class="volver-button" onclick="window.location.href='./reservas.html'">Volver</button>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Centros Cívicos de Córdoba. Todos los derechos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./privacidad.html">Política de Privacidad</a></li>
+                <li><a href="./terminos.html">Términos y Condiciones</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script src="./js/new_reserva.js"></script>
+</body>
+
+</html>

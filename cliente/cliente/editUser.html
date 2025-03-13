@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Usuario</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/editUser.css">
+</head>
+<body>
+    <nav>
+        <img src="./img/logo.png" alt="">
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./actividades.html">Actividades</a></li>
+            <li><a href="./instalaciones.html">Instalaciones</a></li>
+            <li id="reservas"><a href="./reservas.html">Reservas</a></li>
+            <li id="inscripciones"><a href="./inscripciones.html">Inscripciones</a></li>
+            <li id="sistema"><a href="./sistema.html">Usuario</a></li>
+        </ul>
+    </nav>
+
+    <div class="edit-container">
+        <h2>Editar Usuario</h2>
+        <form id="edit-user-form" method="post" action="">
+            <div class="form-group">
+                <label for="nombre">Nuevo Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div class="form-group">
+                <label for="email">Nuevo Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Nueva Contraseña</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="repassword">Repetir Contraseña</label>
+                <input type="password" id="repassword" name="repassword">
+            </div>
+            <button type="submit">Guardar Cambios</button>
+        </form>
+        <button class="volver-button" onclick="window.location.href='./sistema.html'">Volver</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script src="./js/editUser.js"></script>
+
+</body>
+</html>
